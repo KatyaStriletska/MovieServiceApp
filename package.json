@@ -7,13 +7,13 @@
   },
   "private": true,
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.2"
   },
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "description": ""
 }

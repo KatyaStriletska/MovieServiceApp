@@ -23,7 +23,7 @@ const movieSchema = new mongoose.Schema({
     },
     cast: {
         type: Array,
-        required: true,
+        required: false,
     }
 });
 module.exports = mongoose.model("Movie", movieSchema);

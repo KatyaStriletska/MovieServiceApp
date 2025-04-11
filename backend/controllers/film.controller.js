@@ -19,8 +19,8 @@ class Controller {
     }
     static async create(req, res) {
         try {
-            const {title, genre, description, director, cast} = req.body;
-            if (!title || !genre || !description || !director || !cast) {
+            const {title, genre, description, director} = req.body;
+            if (!title || !genre || !description || !director ) {
                 return res.status(400).json({ message: "Not all required data was provided!" });
             }
             const movie = await service.create(req.body);
